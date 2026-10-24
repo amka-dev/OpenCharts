@@ -5,7 +5,7 @@ import path from "path";
 export default defineConfig({
   // GitHub Pages serves a project site from /<repo>/, so the demo workflow sets
   // BASE_PATH. Local builds and self-hosting stay at the domain root.
-  base: process.env.BASE_PATH ?? "/",
+  base: "./",
   plugins: [react()],
   resolve: {
     alias: {
